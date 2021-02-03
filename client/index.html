@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Stripe Checkout Sample</title>
+    <meta name="description" content="A demo of Stripe Payment Intents" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- Load Stripe.js on your website. -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="togethere-background"></div>
+    <div class="sr-root">
+      <div class="sr-main">
+        <header class="sr-header">
+          <div class="sr-header__logo"></div>
+        </header>
+        <h1>Subscription Management</h1>
+
+        <div class="price-table-container">
+          <section>
+            <div class="name">Daily</div>
+            <div class="price">$5</div>
+            <button id="basic-plan-btn">Select</button>
+          </section>
+          <section>
+            <div class="name">Weekly</div>
+            <div class="price">$25</div>
+            <button id="medium-plan-btn">Select</button>
+          </section>
+          <section>
+            <div class="name">Monthly</div>
+            <div class="price">$90</div>
+            <button id="pro-plan-btn">Select</button>
+          </section>
+          <section>    
+            <input type="text" id="subId" name="subId"><br>        
+            <button id="edit-sub-daily">Change to Daily</button>
+            <button id="edit-sub-weekly">Change to Weekly</button>
+            <button id="edit-sub-monthly">Change to Monthly</button>
+          </section>
+          <section>    
+            <input type="text" id="cancelsub" name="cancelsub"><br>        
+            <button id="cancel-sub">Cancel Subscription</button>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div id="error-message" class="error-message"></div>
+  </body>
+</html>
