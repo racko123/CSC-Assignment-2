@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.24.min.js"></script>
+    <!-- Must be used to gain access to AWS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
+    <script src="./javascripts/Upload-image.js"></script>
+</head>
+
+<body>
+    <input type="file" name="file" id="file" value="dataFile" required="">
+
+    <button onclick="uploadFile()">Upload</button>
+    <button onclick="listObjs()">View</button>
+    <!-- Can change to bootstrap CSS not done -->
+
+    <div id="objectUrl"></div>
+    <div id="objectImages"></div>
+</body>
+
+</html>
