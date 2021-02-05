@@ -2,10 +2,6 @@ const urlParams = new URLSearchParams(window.location.search);
 const sessionId = urlParams.get("session_id")
 let customerId;
 
-document.getElementById("talentButton").onclick = function () {
-  location.href = "/paid-view.html";
-};
-
 if (sessionId) {
   fetch("/checkout-session?sessionId=" + sessionId)
     .then(function(result){
