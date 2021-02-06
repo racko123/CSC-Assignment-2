@@ -1,4 +1,4 @@
-var clarifaiApiKey = '15e8ff9d6cb74e608da8f5f00caf35a3';
+var clarifaiApiKey = '';
 var workflowId = 'Face';
 
 var app = new Clarifai.App({
