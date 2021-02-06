@@ -9,6 +9,7 @@ var uploadRouter = require('./routes/upload');
 var uploadImageRouter = require('./routes/Upload-image');
 var imageRecogRouter = require('./routes/Image-Recog');
 var imageRecognitionRouter = require('./routes/Image-Recognition');
+var guestuser = require('./client/guest-view');
 
 var app = express();
 
@@ -24,5 +25,6 @@ app.use('/upload', uploadRouter);
 app.use('/upload', uploadImageRouter);
 app.use('/imageRecog', imageRecognitionRouter);
 app.use('/imageRecog', imageRecogRouter);
+app.use('/Guest', guestuser);
 
 module.exports = app;
