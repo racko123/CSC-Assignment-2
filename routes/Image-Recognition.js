@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-    res.sendFile(path.join(__dirname, "../public/Image-Recog.html"));
+    res.sendFile(path.join('D:/Poly Stuff/Cloud Stuff/CSC Assignment 2/public/Image-Recog.html'));
 });
 
 module.exports = router;
