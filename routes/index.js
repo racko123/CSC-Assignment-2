@@ -1,5 +1,5 @@
-var express = require('express');
-var router = express.Router();
+var clarifaiApiKey = 'ee72fbeb9aa946cf9ddcbc3f8ef0a2c2';
+var workflowId = 'Face';
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
