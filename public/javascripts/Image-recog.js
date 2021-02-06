@@ -30,39 +30,15 @@ function predictFromWorkflow(photoUrl) {
         function(response) {
             var outputs = response.results[0].outputs;
             var analysis = $(".analysis");
-            //var Total=0;
             var Result = document.getElementById("Result")
-            Result.innerHTML = "";
-            var Amount = document.getElementById("Amount")
-            Amount.innerHTML = "";
+            Result.innerHTML = "This is not a Human Face";
             analysis.empty();
             console.log(outputs);
 
-            for (i = 0; i < outputs[2].data.regions.length; i++) {
-                if (outputs[2].data.regions[i].data.text.raw == "100") {
-                    Amount.innerHTML = ", The Amount is " + outputs[2].data.regions[i].data.text.raw;
-                }
+            if (outputs[0].data.regions[0].value > 0.9) {
+                Result.innerHTML = "This is a Human Face";
+                console.log("ree")
             }
-
-            outputs.forEach(function(output) {
-                var modelName = getModelName(output);
-                // Create heading for each section
-                var newModelSection = document.createElement("div");
-                newModelSection.className = modelName + " modal-container";
-
-                var newModelHeader = document.createElement("h2");
-                newModelHeader.innerHTML = modelName;
-                newModelHeader.className = "model-header";
-
-                var formattedString = getFormattedString(output);
-                var newModelText = document.createElement("p");
-                newModelText.innerHTML = formattedString;
-                newModelText.className = "model-text";
-
-                newModelSection.append(newModelHeader);
-                newModelSection.append(newModelText);
-                analysis.append(newModelSection);
-            });
         },
     );
 }
