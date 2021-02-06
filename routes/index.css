@@ -1,0 +1,78 @@
+body {
+    font-family: "Muli";
+    margin: 0;
+}
+
+.header {
+    background-color: #000000;
+    height: 100%;
+    margin: 0;
+    padding: 2vh 1vw;
+    color: white;
+}
+
+.header-text {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 2vh 2vw;
+}
+
+.upload-photo {
+    margin-right: 4vw;
+}
+
+.file-upload {
+    margin-bottom: 2vh;
+}
+
+.analysis {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.modal-container {
+    width: 30vw;
+    margin: 1vh 1vw;
+}
+
+.photo {
+    display: none;
+    width: 20vw;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    display:none;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
