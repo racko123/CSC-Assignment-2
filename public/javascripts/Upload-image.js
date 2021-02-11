@@ -1,7 +1,7 @@
 AWS.config.update({
-    accessKeyId: 'ASIAU3TO4RKSLVIJXMKI',
-    secretAccessKey: 'QCgkBQ9cLVOyypzW2QKUJHyAlhSfN88nMjcr2KQP',
-    sessionToken: 'FwoGZXIvYXdzEL///////////wEaDDvwOPgHnUaiIqjEBCLNAYDRSX8WUhKrrgwBgnXaGCHP3GlRXDjXGRDVpzDQ3vdWi9gdVLtMUhaHAfuw9e6uw1FUT5CmUqu7iDontYWrQ/xnHpdt08pEQE2Qp1NL7xEddz05OVvW1TwGKTfTnMEOyPiMvOLo3wu1VQ0ej0jUaBtbHEYLIyFnFqN0Pz0994LuRleXY+j5mbcjyZFAXVucLDr3MyhxrL7qrGVYi1xKvXAtRkSTVQejR2mIYAWvdJ7HNCv1quNn+ION56LmYvg0pvJuiwyvuTt6SeLl8jUo/b6PgQYyLcKdj6U8O2HGG6olEcsNW94bkVjCYymUhdAOWjX78N9shN3Wm6Zz9GY1D+I7Fg=='
+    accessKeyId: 'ASIAU3TO4RKSLPNPY2A3',
+    secretAccessKey: 'E4mLnZ0xMmoLAJ4aods3WUVDktB6D2t3BALfujxW',
+    sessionToken: 'FwoGZXIvYXdzEMr//////////wEaDPe4RTkccLVDIm2BbyLNAUVLhmwmzxfnJypfhX942C1bMAq9p2UjmZmUDPYNj8V3SUAgKb8yUWvXXUTMT3zBKKyWiSJuJt/zFm+Ap49IF8KeYRp8dYMul9c05GZYVTQotjsmXjZRGSIRQMozjHXzGnCg2IxYMVq+Qcth/K19bBxmEVJFLAN9pZqfdEhybtPlBu4GVxqCXvsgbGnKXA8P3vCs4xd+HMbU0K1imwJ4vzCV94ld34hrSo14rHzMf/GtSHZwOTuzZ//orQZvG9tl8XaudDAH4ffs9BTuy3Ao7eiRgQYyLVpcgWkHI1C+3EIsfhkjTXXUWRC1Sx7hL1C7HR9Xx296soBlLyxhEwOJY1GZTw=='
 });
 
 AWS.config.region = 'us-east-1'; //region for where the server will be in
